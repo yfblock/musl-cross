@@ -12,17 +12,11 @@ jobs:
     strategy:
       matrix:
         target:
-          - aarch64-unknown-linux-musl
-          - arm-unknown-linux-musleabi
-          - arm-unknown-linux-musleabihf
-          - loongarch64-unknown-linux-musl
-          - mips64el-unknown-linux-musl
-          - mips64-unknown-linux-musl
-          - mipsel-unknown-linux-musl
-          - mips-unknown-linux-musl
-          - riscv32-unknown-linux-musl
-          - riscv64-unknown-linux-musl
-          - x86_64-multilib-linux-musl
+          - aarch64-linux-musl
+          - loongarch64-linux-musl
+          - riscv32-linux-musl
+          - riscv64-linux-musl
+          - x86_64-linux-musl
     steps:
       - name: Checkout
         uses: actions/checkout@v2
