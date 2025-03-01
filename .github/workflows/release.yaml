@@ -14,7 +14,11 @@ jobs:
       fail-fast: true
       matrix:
         target:
+          - aarch64-linux-musl
           - loongarch64-linux-musl
+          - riscv32-linux-musl
+          - riscv64-linux-musl
+          - x86_64-linux-musl
           # - aarch64-unknown-linux-musl
           # - arm-unknown-linux-musleabi
           # - arm-unknown-linux-musleabihf
